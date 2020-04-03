@@ -5,6 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{datetime}
+%\usepackage{booktabs}
 
 % Possible options of the package (add/remove below in \usetheme call):
 %  - nosectionpages: no pages between sections
@@ -37,69 +38,67 @@
 	\setcounter{framenumber}{0}
 \end{frame}
 
+\begin{frame}[allowframebreaks]{Overview}
+\tableofcontents
+\end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{WIMP} 
+
+
+\subsection{The WIMP paradigm}
+
+\begin{frame}{}
+Assuming there exist interactions between a cosmologically stable particle $\chi$-the (generic) DM- with Standard Model (SM) particles, sizable enough that for a high enough temperature T the DM is in thermal equilibrium with the primordial thermal bath, the cosmological evolution of the DM particle can be traced through the following Boltzmann equation:
+\[
+\frac{dn_{\chi}}{dt}+3H(T)n_{\chi}=-\left\langle \sigma v \right\rangle \left(n^2_{\chi}-n^2_{\chi,eq}\right)
+\]
+describing the DM number density $n_{\chi}$ in turn defined as:
+
+\[
+n_{\chi}(T)=\int\frac{d^3p}{(2\pi)^2}f_{\chi}(p,T)
+\]
+
+\end{frame}
+
+
+\begin{frame}{}
+
+
+As the Universe expands, the scale factor increases and the temperature decreases. Assuming that $\chi$ continues to be in thermal equilibrium, eventually the temperature drops below the DM mass, and the annihilation rate for DM particles, which depends linearly on the number equilibrium density $n_{\chi,eq}$, enters the so-called “Boltzmann-tail”: 
+\[
+n_{\chi,eq}\propto\exp(-m_{\chi}/T)
+\]; 
+the annihilation rate then eventually fall below the Universe expansion rate, $H(T)$ (a power-law in temperature, $\propto T^2$ in the radiation-dominated universe), leading to the thermal freeze-out of this “cold” relic. Thereafter, the DM comoving number density $Y_{\chi}=\frac{n_{\chi}}{s}$ is approximately constant.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Co-Annihilation}
+\subsection{Co-Annihilation Mechanism} 
+
+\begin{frame}{}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dark Matter Models} 
 \subsection{Single Scalar (SS)}
+\subsubsection{Experiment Constrains}
+\begin{frame}{}
 
-\begin{frame}{The Model}
-	
-	\begin{alertblock}{The problem}
-		
-		\begin{itemize}
-			\item
-			UPMC Food-101 has been crawled from Google Images
-			\item
-			It contains a certain amount of noise
-		\end{itemize}
-		
-	\end{alertblock}
-	
-	\begin{block}{The idea}
-		
-		\begin{itemize}
-			\item
-			Creating bags from images of 1 class (e.g.~pizza)
-			\item
-			Creating bags for ``rest'' class
-			\item
-			Defining the expected level of noise in the pizza bags
-			\item
-			Using \emph{Learning with Label Proportions} models to detect noise
-		\end{itemize}
-		
-	\end{block}
-	
 \end{frame}
 
-\begin{frame}{Experimentations}
-	
-	\begin{block}{Protocol}
-		
-		\begin{itemize}
-			\item
-			\textbf{Dataset:}
-			\((x_i, y_i, y_i^*) \in \mathbb{R}^p \times \{-1,1\} \times \{-1,1\},\quad i=1..n\)
-			
-			\begin{itemize}
-				\item
-				\(x_i\) features, \(y_i\) noisy label, \(y_i^*\) true label (not
-				available for training)
-			\end{itemize}
-			\item
-			\textbf{Create bags:} Create bags \(b_j\) of 30 points having the same
-			\(y_i\) and give them a proportion of positive points \(p_j\)
-			\item
-			\textbf{Training:} Train the SyMIL model on bags and train an SVM on
-			\((b_j, p_j)\) / \((x_i, y_i)\)
-			\item
-			\textbf{Evaluation:} Use the decision frontiers of SyMIL / SVM models
-			to reclassify each \(x_i\)s by predicting \(\hat{y}_i^*\), and compare
-			with \(y_i^*\)
-		\end{itemize}
-		
-	\end{block}
-	
-\end{frame}
+
+\subsection{}
+\subsubsection{Experiment Constrains}
+
+\subsection{VLF}
+\subsubsection{Co-Annihilation}
+\subsubsection{DM}
+\subsubsection{Yukawa}
+\subsubsection{Taus}
+\subsubsection{Experiment Constrains}
 
 \begin{frame}{Some papers for noisy images datasets}
 	
@@ -116,6 +115,17 @@
 		\end{itemize}
 		
 	\end{exampleblock}
+
+	\begin{alertblock}{The problem}
+	
+	\begin{itemize}
+		\item
+		UPMC Food-101 has been crawled from Google Images
+		\item
+		It contains a certain amount of noise
+	\end{itemize}
+	
+	\end{alertblock}
 	
 \end{frame}
 
