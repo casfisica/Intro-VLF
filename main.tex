@@ -5,6 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{datetime}
+\usepackage{multicol}
 %\usepackage{booktabs}
 
 % Possible options of the package (add/remove below in \usetheme call):
@@ -25,29 +26,48 @@
 \usepackage[backend=bibtex, style=authoryear, citestyle=authoryear]{biblatex}
 \bibliography{library.bib}
 \renewcommand*{\bibfont}{\footnotesize}
-
+\usepackage{setspace}
 
 %%%%
 %% BEGIN OF SLIDES
 %%%%
 
 \begin{document}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
 	\titlepage
 	\setcounter{framenumber}{0}
 \end{frame}
-
-\begin{frame}[allowframebreaks]{Overview}
-\tableofcontents
-\end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[allowframebreaks]{Overview}
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dark Matter}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Dark Matter}
+Over time different hypotheses have been proposed to explain DM physical nature$^1$. One of the most attractive is Weakly Interacting Massive Particle (WIMP) models that remain as a strong possibility for understanding DM.
+
+
+	\begin{spacing}{0.5}
+	{\tiny
+		1. \citetitle{Garrett:2010hd}, \cite{Garrett:2010hd}
+		
+		2. 
+		
+	}
+\end{spacing}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{WIMP} 
 
 
 \subsection{The WIMP paradigm}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{}
 Assuming there exist interactions between a cosmologically stable particle $\chi$-the (generic) DM with Standard Model (SM) particles, sizable enough that for a high enough temperature $T$ the DM is in thermal equilibrium with the primordial thermal bath, the cosmological evolution of the DM particle can be traced through the following Boltzmann equation\footcite{Arcadi2017}:
 \[
@@ -60,10 +80,9 @@ n_{\chi}(T)=\int\frac{d^3p}{(2\pi)^2}f_{\chi}(p,T)
 \]
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{}
-
 
 As the Universe expands, the scale factor increases and the temperature decreases. Assuming that $\chi$ continues to be in thermal equilibrium, eventually the temperature drops below the DM mass, and the annihilation rate for DM particles, which depends linearly on the number equilibrium density $n_{\chi,eq}$, enters the so-called “Boltzmann-tail”: 
 \[
@@ -71,47 +90,84 @@ n_{\chi,eq}\propto\exp(-m_{\chi}/T)
 \]; 
 the annihilation rate then eventually fall below the Universe expansion rate, $H(T)$ (a power-law in temperature, $\propto T^2$ in the radiation-dominated universe), leading to the thermal freeze-out of this “cold” relic. Thereafter, the DM comoving number density $Y_{\chi}=\frac{n_{\chi}}{s}$ \footnote{text} is approximately constant.
 
-\end{frame}
 
+\citetitle{Arcadi2017}, \cite{Arcadi2017}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Co-Annihilation}
 \subsection{Co-Annihilation Mechanism} 
-
-\begin{frame}{}
-
-\end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Dark Matter Models} 
-\subsection{Single Scalar (SS)}
-\subsubsection{Experiment Constrains}
 \begin{frame}{}
 
+	\begin{spacing}{0.5}
+		{\tiny
+			1. \citetitle{Ibarra2014},\cite{Ibarra2014}
+			2. \cite{Bertone2005,Giacchino2013}
+		}
+	\end{spacing}
+
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dark Matter Models}
+\subsection{Single Scalar (SS)}			
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+
+\begin{spacing}{0.5}
+	{\tiny
+		1. \cite{Giacchino2013}
+		2. %\cite{}
+	}
+\end{spacing}
 
 
-\subsection{}
-\subsubsection{Experiment Constrains}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Single-Doublet (SD)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+\cite{Cohen2012}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Lepton Portal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+\cite{Bai2014}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{VLF}
+\section{Experiment Constrains}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+
+Colliders\cite{Penning2018,Boveia2018}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{VLF}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\cite{Toma2013,Ibarra2014,Garny2013}
+	Compress-Spectra\cite{Aaboud2018}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Co-Annihilation}
 \subsubsection{DM}
 \subsubsection{Yukawa}
 \subsubsection{Taus}
-\subsubsection{Experiment Constrains}
-
-\begin{frame}{Some papers for noisy images datasets}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
 	
-	\begin{exampleblock}{\citetitle{Azadi2015} \cite{Azadi2015}}
-		
+	\begin{exampleblock}{}
+		%\citetitle{Arcadi2017} \cite{Arcadi2017}
 		\begin{itemize}
 			\item
-			Define a regularized loss for training the CNN
+			
 			\item
-			Can be seen as looking for the label of similar images for
-			regularization
+			
 			\item
-			Results slightly better than Sukhbaatar model
+			
 		\end{itemize}
 		
 	\end{exampleblock}
@@ -128,14 +184,15 @@ the annihilation rate then eventually fall below the Universe expansion rate, $H
 	\end{alertblock}
 	
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{References} \subsection{}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[allowframebreaks]{References}
 	
 	\printbibliography[heading=none]
 	
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
